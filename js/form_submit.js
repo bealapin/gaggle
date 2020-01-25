@@ -37,7 +37,10 @@ function SubmitForm()
 
     var request = new XMLHttpRequest()
 
+
     request.open('POST', 'http://85ac985e.ngrok.io/api/chats', true);
+
+    request.setRequestHeader('Content-type', 'application/json');
 
     request.onload = function() {
 

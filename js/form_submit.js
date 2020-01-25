@@ -6,21 +6,44 @@ function SubmitForm()
     var eventTags = document.getElementById('request-tags').value
     var userName = document.getElementById('user-name').value
     var groupSize = document.getElementById('group-size').value
-    
 
     var markerLocation = {
         lat: marker.getPosition().lat(),
         lng: marker.getPosition().lng()
     }
 
+    var latLngArray = [];
+    latLngArray.push(markerLocation.lng);
+    latLngArray.push(markerLocation.lat);
+
+    var tagsArray = eventTags.split("#").slice(1);
+
+    var groupSizeArray = groupSize.split("-")
+
+    console.log(groupSizeArray)
+
+    console.log(tagsArray)
+
+    var data = {
+        location: {
+            type: 'Point',
+            coordinates : latLngArray
+        },
+        name: userName,
+        tags: tagsArray,
+        size: parseInt(groupSizeArray[1])
+
+    }
+
     var request = new XMLHttpRequest()
 
-    request.open('POST', '/api/chats', true);
+    request.open('POST', 'http://85ac985e.ngrok.io/api/chats', true);
 
     request.onload = function() {
 
     }
 
+    request.send(JSON.stringify(data))
     
 
 }

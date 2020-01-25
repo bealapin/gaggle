@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaoYM6eXp8seks5BkxvUIvzQC3c-1skGY&callback=myMap"
-      type="text/javascript"></script>
+    
     <script src="js/form_submit.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -21,22 +20,25 @@
 
     </section>
     <div class="container login-container">
-        <img class="yukonLogo" src="yukonLogo.svg">
+        <img class="yukonLogo" src="gaggleLogo.png">
         <div class="row">
+          <h1>Create event</h1>
+          
             <div class="col-md-12 login-form-1">
                 <form action="#" method="post" id="form_id">
                     <div class="row">
                         <div class="col-sm-6">
-                          <div class="card">
+                          <div class="card mapCard">
+                            <h5>Where is your gaggl?</h5>
                             <div class="card-body">
-                                <div id="googleMap" style="width:100%;height:400px;"></div>
+                                <div id="googleMap" style="width:100%;height:300px;"></div>
                             </div>
                           </div>
                         </div>
                         <div class="col-sm-6">
-                          <div class="card">
+                          <div class="card formCard">
                             <div class="card-body">
-                                <h4>Create event</h4>
+                                
                                 <form>
                                     
                                     <div class="form-group">
@@ -45,7 +47,7 @@
                                       </div>
                                       <div class="form-group">
                                         <label for="inputAddress">Tags</label>
-                                        <input type="text" class="form-control" id="request-tags" placeholder="">
+                                        <input type="text" class="form-control" id="request-tags" placeholder="#gowithyourgaggl">
                                       </div>
                                     <div class="form-row">
                                       <div class="form-group col-md-6">
@@ -76,8 +78,10 @@
                 
             </div>
         </div>
-    </div>
+</div>
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaoYM6eXp8seks5BkxvUIvzQC3c-1skGY&callback=myMap"
+      type="text/javascript"></script>
     
     
     <script>

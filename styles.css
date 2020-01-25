@@ -6,21 +6,17 @@
     padding: 0px;
 }
 
-.footer-menu {
-    background-color:#0B3442;
-    padding-bottom: 25px;
-    margin-left: -1px;
-    padding-top: 0px;
-    color: white;
-    
-}
+
 
 .card {
    
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 440px;
     border-radius: 5px;
+    background-color: transparent;
     box-shadow:  0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 100px;
+    margin-bottom: 100px;;
 }
 .container { 
     padding-left: 30px;
@@ -42,11 +38,11 @@
    
 }
 body {
-   background-image: url('mountains3.png') ;
+   background-image: url('background.png') ;
    background-size: 600px 500px;
    background-repeat: no-repeat;
-   background-position: 50% 80%;
-   background-size: 200% auto;
+   background-position: 50% -10%;
+   background-size: 120% auto;
    margin-top: 00px; 
    padding-left: 1px; 
    margin-bottom: 0px;
@@ -83,13 +79,11 @@ a {
     padding: 50px;
     margin: 5px;
 }
-.logoFooter {
-    width: 15%;
-    padding-bottom: 10px;
-    padding-right: 20px;
-}
-h4 {
+
+h1 {
     margin-bottom: 16px;
+    margin-left: 450px;
+    text-align: center !important;
 }
 
 .login-container {
@@ -103,7 +97,8 @@ html {
     padding: 0px;
 }
 .yukonLogo {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+    height: 100px;
 }
 h6 {
     font-family: 'Rubik', Helvetica, sans-serif;
@@ -117,10 +112,12 @@ hr {
     border-top: 2px solid #1C778C;
     width: 200px;
 }
-h4 {
+h5 {
     font-family: 'Rubik', Helvetica, sans-serif;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
     color:#0B3442;
 }
 .signUp {
@@ -171,3 +168,18 @@ label {
     flex-grow: 1;
   }
 
+.mapCard {
+    margin-left: 55px;
+    margin-right: 20px;
+}
+
+.formCard {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.pin {
+    height: 5%;
+}
+.form-group {
+    margin-top: 30px;
+}

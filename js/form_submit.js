@@ -1,7 +1,4 @@
-const axios = require('axios')
-
 var marker = {}
-
 
 function SubmitForm() 
 {
@@ -9,12 +6,22 @@ function SubmitForm()
     var eventTags = document.getElementById('request-tags').value
     var userName = document.getElementById('user-name').value
     var groupSize = document.getElementById('group-size').value
+    
+
     var markerLocation = {
         lat: marker.getPosition().lat(),
         lng: marker.getPosition().lng()
     }
 
-    axios.post()
+    var request = new XMLHttpRequest()
+
+    request.open('POST', '/api/chats', true);
+
+    request.onload = function() {
+
+    }
+
+    
 
 }
 
@@ -28,7 +35,7 @@ function myMap() {
     };
       var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-       marker = new google.maps.Marker({
+      marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
           draggable:true,
@@ -42,3 +49,4 @@ function myMap() {
       console.log(lng)
 
     }
+

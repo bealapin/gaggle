@@ -51,6 +51,14 @@ body {
    padding-left: 1px; 
    margin-bottom: 0px;
 }
+
+body-chat {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
 p {
     font-size: 14px !important;
     text-align: center;
@@ -134,4 +142,32 @@ label {
     font-family: 'Rubik', Helvetica, sans-serif;
     color:#0B3442;
 }
+
+#message-container {
+    width: 80%;
+    max-width: 1200px;
+  }
+
+  #message-container div {
+    background-color: #CCC;
+    padding: 5px;
+  }
+
+  #message-container div:nth-child(2n) {
+    background-color: #FFF;
+  }
+
+  #send-container {
+    position: fixed;
+    padding-bottom: 30px;
+    bottom: 0;
+    background-color: white;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+  }
+
+  #message-input {
+    flex-grow: 1;
+  }
 

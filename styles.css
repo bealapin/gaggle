@@ -89,6 +89,7 @@ h4 {
     margin: 100px;
     margin-bottom: 0px;
     margin-top: 30px;
+
 }
 html {
     padding: 0px;
@@ -102,12 +103,7 @@ h6 {
     text-align: center;
     color:#0B3442;
 }
-.qrcode {
-    font-family: 'Rubik', Helvetica, sans-serif;
-    text-align:center;
-    color:#0B3442;
-    font-weight: lighter;
-}
+
 hr {
     font-family: 'Rubik', Helvetica, sans-serif;
     border-top: 2px solid #1C778C;
@@ -133,17 +129,7 @@ h4 {
     text-align: left;
     font-weight: lighter;
 }
-.password {
-    font-family: 'Rubik', Helvetica, sans-serif;
-    color: teal !important;
-    text-decoration: none;
-    font-weight: lighter;
-}
-.install {
-    font-family: 'Rubik', Helvetica, sans-serif;
-    color:#0B3442;
-    font-weight: lighter;
-}
+
 label {
     font-family: 'Rubik', Helvetica, sans-serif;
     color:#0B3442;
